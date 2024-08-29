@@ -1,28 +1,28 @@
-﻿Workshop Name;Data;Orario;Location
-Introduzione all'Ingegneria Informatica;05/09/2024;10:00;140/1 Q140
-Robotica Avanzata;12/09/2024;14:00;Sala Studio Q150
-Sistemi Elettronici;19/09/2024;11:00;140/2 Q140
-Bioingegneria e Innovazione;26/09/2024;09:00;Salone Polifunzionale Q160
-Modellazione e Simulazione;03/10/2024;15:00;140/3 Q140
-Materiali Biocompatibili;10/10/2024;13:00;Salone Polifunzionale Aule Sud PTTT
-Intelligenza Artificiale;17/10/2024;16:00;140/D3 Q140
-Meccanica dei Materiali;24/10/2024;11:00;145/1 168 3A Q145
-Automazione Industriale;31/10/2024;14:00;145/2 208 3B Q145
-Progettazione di Circuiti Integrati;07/11/2024;10:00;145/3 Q145
-Tecnologie Mediche Avanzate;14/11/2024;13:00;155/8 Q155
-Comunicazioni Wireless;21/11/2024;09:00;155/10 Q155
-Microelettronica;28/11/2024;15:00;155/D1 Q155
-Sensori e Attuatori;05/12/2024;14:00;155/D2 Q155
-Biomateriali;12/12/2024;11:00;155/D3 Q155
-Energetica e Ambiente;19/12/2024;13:00;155/D4 Q155
-Progettazione Meccanica;09/01/2025;10:00;160/1Q160
-Ingegneria Elettrica;16/01/2025;14:00;EN3 Q160
-Sistemi di Controllo;23/01/2025;09:00;EN4 Q160
-Elettromagnetismo Applicato;30/01/2025;15:00;A7/8 Aule Sud PTTT
-Nanotecnologie;06/02/2025;11:00;A9/10 Aule Sud PTTT
-Termodinamica;13/02/2025;13:00;A11 Aule Sud PTTT
-Automazione dei Processi;20/02/2025;09:00;B1 Aule Sud PS01
-Calcolo Numerico;27/02/2025;14:00;B2 Aule Sud PS01
-Elettromeccanica;05/03/2025;16:00;B3 Aule Sud PS01
-Fisica Tecnica;12/03/2025;10:00;B4/5 Aule Sud PS01
-Progettazione di Sistemi Embedded;19/03/2025;11:00;B7/8 Aule Sud PS01
+﻿Workshop Name;Data;Orario;Location;Corso di Studi
+Introduzione all'Ingegneria Informatica;05/09/2024;10:00;140/1 Q140;Ingegneria Informatica
+Robotica Avanzata;12/09/2024;14:00;Sala Studio Q150;Ingegneria Informatica
+Sistemi Elettronici;19/09/2024;11:00;140/2 Q140;Ingegneria Elettronica
+Bioingegneria e Innovazione;26/09/2024;09:00;Salone Polifunzionale Q160;Ingegneria Biomedica
+Modellazione e Simulazione;03/10/2024;15:00;140/3 Q140;Ingegneria Informatica
+Materiali Biocompatibili;10/10/2024;13:00;Salone Polifunzionale Aule Sud PTTT;Ingegneria Biomedica
+Intelligenza Artificiale;17/10/2024;16:00;140/D3 Q140;Ingegneria Informatica
+Meccanica dei Materiali;24/10/2024;11:00;145/1 Q145;Ingegneria Meccanica
+Automazione Industriale;31/10/2024;14:00;145/2 Q145;Ingegneria Meccanica
+Progettazione di Circuiti Integrati;07/11/2024;10:00;145/3 Q145;Ingegneria Elettronica
+Tecnologie Mediche Avanzate;14/11/2024;13:00;155/8 Q155;Ingegneria Biomedica
+Comunicazioni Wireless;21/11/2024;09:00;155/10 Q155;Ingegneria Elettronica
+Microelettronica;28/11/2024;15:00;155/D1 Q155;Ingegneria Elettronica
+Sensori e Attuatori;05/12/2024;14:00;155/D2 Q155;Ingegneria Elettronica
+Biomateriali;12/12/2024;11:00;155/D3 Q155;Ingegneria Biomedica
+Energetica e Ambiente;19/12/2024;13:00;155/D4 Q155;Ingegneria Ambientale
+Progettazione Meccanica;09/01/2025;10:00;160/1 Q160;Ingegneria Meccanica
+Ingegneria Elettrica;16/01/2025;14:00;EN3 Q160;Ingegneria Elettrica
+Sistemi di Controllo;23/01/2025;09:00;EN4 Q160;Ingegneria Elettrica
+Elettromagnetismo Applicato;30/01/2025;15:00;A7/8 Aule Sud PTTT;Ingegneria Elettrica
+Nanotecnologie;06/02/2025;11:00;A9/10 Aule Sud PTTT;Ingegneria Elettronica
+Termodinamica;13/02/2025;13:00;A11 Aule Sud PTTT;Ingegneria Meccanica
+Automazione dei Processi;20/02/2025;09:00;B1 Aule Sud PS01;Ingegneria Meccanica
+Calcolo Numerico;27/02/2025;14:00;B2 Aule Sud PS01;Ingegneria Informatica
+Elettromeccanica;05/03/2025;16:00;B3 Aule Sud PS01;Ingegneria Meccanica
+Fisica Tecnica;12/03/2025;10:00;B4/5 Aule Sud PS01;Ingegneria Meccanica
+Progettazione di Sistemi Embedded;19/03/2025;11:00;B7/8 Aule Sud PS01;Ingegneria Informatica

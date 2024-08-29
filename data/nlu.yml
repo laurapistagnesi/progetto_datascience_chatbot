@@ -1,91 +1,244 @@
 version: "3.1"
 
 nlu:
+
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - ciao
+    - salve
+    - buongiorno
+    - buonasera
+    - ehi
+    - we
+    - buongiorno
+    - buonasera
+    - oi
+    - bella
+    - ciao amico
+    - buon pomeriggio
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - ciao
+    - arrivederci
+    - a presto
+    - buona notte
+    - addio
+    - ci vediamo
+    - buona giornata
+    - ci vediamo in giro
+    - ciao ciao
+    - a dopo
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - sì
+    - esatto
+    - certo
+    - naturalmente
+    - perfetto
+    - corretto
 
 - intent: deny
   examples: |
     - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - mai
+    - non credo
+    - non mi piace
+    - neanche per sogno
+    - non proprio
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - perfetto
+    - fantastico
+    - incredibile
+    - mi sento come un re
+    - meraviglioso
+    - mi sento molto bene
+    - sto alla grande
+    - sono incredibile
+    - salverò il mondo
+    - super emozionato
+    - estremamente bene
+    - così perfetto
+    - così buono
+    - così perfetto
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - la mia giornata è stata orribile
+    - sono triste
+    - non mi sento molto bene
+    - sono deluso
+    - super triste
+    - sono così triste
+    - triste
+    - molto triste
+    - infelice
+    - non bene
+    - non molto bene
+    - estremamente triste
+    - così triste
+    - così triste
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - sei un bot?
+    - sei un umano?
+    - sto parlando con un bot?
+    - sto parlando con un umano?
+
+- intent: info_bot
+  examples: |
+    - cosa puoi fare?
+    - cosa posso chiederti?
+    - che funzionalità hai?
+
+- intent: inform_workshop
+  examples: |
+    - Quando è il workshop [Bioingegneria e Innovazione](workshop_name)?
+    - Dimmi del workshop [Materiali Biocompatibili](workshop_name)
+    - Dove si terrà il workshop [Modellazione e Simulazione](workshop_name)?
+    - Puoi darmi informazioni sul workshop [Intelligenza Artificiale](workshop_name)?
+    - Quando e dove si terrà il workshop [Automazione Industriale](workshop_name)?
+    - Voglio sapere di più sul workshop [Progettazione di Circuiti Integrati](workshop_name)
+    - Mi serve l'orario del workshop [Tecnologie Mediche Avanzate](workshop_name)
+    - Dove si terrà il workshop [Comunicazioni Wireless](workshop_name)?
+    - Qual è la data del workshop [Energetica e Ambiente](workshop_name)?
+    - Puoi dirmi qualcosa sul workshop [Nanotecnologie](workshop_name)?
+    - Dove si svolgerà il workshop [Progettazione di Sistemi Embedded](workshop_name)?
+    - Quando sarà il workshop [Elettromagnetismo Applicato](workshop_name)?
+
+- intent: inform_lab_tour
+  examples: |
+    - Vorrei sapere del tour [Visita Laboratorio di Acustica Applicata + Camera Silente](lab_tour_name)
+    - Quando è il tour [Visita Laboratorio di Termotronica](lab_tour_name)?
+    - Dove ci si incontra per il tour [Visita Laboratorio Simulatore Solare](lab_tour_name)?
+    - Qual è l'orario del tour [Visita Laboratorio di Energetica Ambientale](lab_tour_name)?
+    - Vorrei informazioni sul tour [Visita Laboratorio Adele](lab_tour_name)
+    - Puoi darmi i dettagli del tour [Visita Laboratorio di Tecnica del Freddo](lab_tour_name)?
+    - Dove si terrà il tour [Visita Laboratorio di Proprietà Termofisiche dei Fluidi](lab_tour_name)?
+    - Qual è il luogo d'incontro per il tour [Visita Laboratorio Creep Ecap](lab_tour_name)?
+    - Quando sarà il tour [Visita Laboratorio Prove Lavorabilità](lab_tour_name)?
+    - Vorrei sapere dove si svolgerà il tour [Visita Laboratorio Tecnologia Meccanica](lab_tour_name)
+    - Puoi dirmi qualcosa sul tour [Visita Laboratorio B](lab_tour_name)?
+    - Mi serve l'orario del tour [Visita Laboratorio di Reverse Engineering](lab_tour_name)
+
+- intent: inform_room
+  examples: |
+    - Dove si trova l'aula [140/2](aula)?
+    - Come raggiungo la stanza [Salone Polifunzionale Q160](aula)?
+    - In che edificio si trova [A7/8 Aule Sud PTTT](aula)?
+    - Dammi informazioni sull'aula [140/3](aula)
+    - Dove si trova l'aula [145/1](aula)?
+    - Mi puoi dire dove si trova la stanza [155/10](aula)?
+    - Come faccio a trovare l'aula [145/2](aula)?
+    - Dov'è situata la stanza [160/1](aula)?
+    - Voglio sapere la posizione dell'aula [155/D4](aula)
+    - In quale edificio si trova la stanza [155/D3](aula)?
+    - Qual è la posizione dell'aula [EN3](aula)?
+    - Puoi dirmi dove si trova l'aula [B1 Aule Sud PS01](aula)?
+
+- intent: inform_planimetria
+  examples: |
+    - Mi fai vedere la planimetria della quota [Q140](quota)?
+    - Vorrei vedere la planimetria della quota [Q160](quota)?
+    - Voglio la planimetria di [PTTT](quota)
+    - Mostrami la planimetria della quota [PS01](quota)
+    - Ho bisogno della planimetria per [Q155](quota)
+
+- intent: ask_ofa_info
+  examples: |
+    - Dammi informazioni sul test d'ingresso
+    - Cosa sono gli ofa?
+    - Cos'è test di verifica delle conoscenze?
+    - Cosa è il test per l'immatricolazione?
+
+- intent: ask_ofa_date_info
+  examples: |
+    - Quando è possibile svolgere il test d'ingresso?
+    - Quando è il test d'ingresso?
+    - Quando si svolgono i test di verifica delle conoscenze?
+    - Quando è il test per l'immatricolazione?
+
+- intent: ask_ofa_bad_info
+  examples: |
+    - Cosa succede se non supero il test d'ingresso?
+    - Cosa succede se non supero il test di verifica delle conoscenze?
+    - Cosa succede se non supero il test per l'immatricolazione?
+    - Se non supero il test?
+    - Se non supero il test d'ingresso?
+    - Se non supero il test di verifica delle conoscenze?
+    - Se non supero il test per l'immatricolazione?
+
+- intent: start
+  examples: |
+    - /start
+    - start
+
+- intent: ask_workshops
+  examples: |
+    - Mi dici quali workshop sono disponibili?
+    - Mostrami i workshop
+    - Quali sono i workshop disponibili?
+    - Posso sapere i workshop?
+
+- intent: select_course
+  examples: |
+    - Voglio vedere i workshop per [Ingegneria Informatica](study_course)
+    - Mostrami i workshop di [Ingegneria Elettronica](study_course)
+    - [Ingegneria Meccanica](study_course)
+    - Quali sono i workshop di [Ingegneria Ambientale](study_course)
+    - Posso sapere i workshop per [Ingegneria Biomedica](study_course)?
+    - [Ingegneria Elettrica](study_course)
+
+- intent: book_workshop
+  examples: |
+    - Vorrei prenotare un workshop
+    - Come posso iscrivermi al workshop?
+    - Posso prenotare un workshop?
+    - Voglio registrarmi al workshop
+    - Mi piacerebbe iscrivermi al workshop
+    - Vorrei partecipare al workshop
+    - Prenota un workshop
+
+- synonym: Robotica Avanzata
+  examples: |
+    - robotica avanzata
+    - Robotica Avanzata
+    - robotica
+    - Robotica
+
+- synonym: Q140
+  examples: |
+    - 140
+
+- synonym: Q145
+  examples: |
+    - 145
+    
+- synonym: Q150
+  examples: |
+    - 150
+
+- synonym: Q155
+  examples: |
+    - 155
+    
+- synonym: Q160
+  examples: |
+    - 160
+
+- synonym: Visita Laboratorio CESMI 2
+  examples: |
+    - CESMI 2
+    - Visita CESMI
+    - Laboratoria cesmi
+
+- synonym: Visita Laboratorio B+
+  examples: |
+    - Visita Laboratorio B
+    - Lab B
+    - Laboratorio B
+    - Lab B+

@@ -1,6 +1,8 @@
 version: "3.1"
 
 intents:
+  - start
+  - info_bot
   - greet
   - goodbye
   - affirm
@@ -8,27 +10,185 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - nlu_fallback
+  - inform_workshop:
+      use_entities: true
+  - inform_lab_tour:
+      use_entities: true
+  - inform_room:
+      use_entities: true
+  - ask_ofa_info
+  - ask_ofa_date_info
+  - ask_ofa_bad_info
+  - ask_workshops
+  - select_course
+  - inform_planimetria
+  - book_workshop
+
+entities:
+  - workshop_name
+  - lab_tour_name
+  - aula
+  - study_course
+  - quota
+  - name
+  - email
+  - workshop_name_text
+
+actions:
+  - action_workshop_info
+  - action_lab_tour_info
+  - action_room_info
+  - utter_start
+  - utter_ofa_info
+  - utter_ofa_date_info
+  - utter_ofa_bad_info
+  - action_reset_slots
+  - utter_ask_study_course
+  - action_show_workshops
+  - action_planimetria_info
+  - action_submit_workshop_booking
+  - action_validate_form
+
+slots:
+  aula:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: aula
+  lab_tour_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: lab_tour_name
+  workshop_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: workshop_name
+  study_course:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: study_course
+  quota:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: quota
+  workshop_name_text:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: workshop_booking_form
+            requested_slot: workshop_name_text
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: workshop_booking_form
+            requested_slot: name
+  email:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: workshop_booking_form
+            requested_slot: email
 
 responses:
+
+  utter_start:
+  - text: "Ciao! Sono il bot che ti aiuta durante l'orientamento nell'Università Politecnica delle Marche! Come posso aiutarti? Puoi chiedermi informazioni sulle aule, sui tour dei laboratori, sui workshop o sul test d'ingresso!"
+  
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Ciao! Come stai?"
+  - text: "Ciao! Come posso aiutarti?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Ti è stato utile?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Bene!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Ciao!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_default:
+  - text: "Mi dispiace, non ho capito. Puoi chiedermi informazioni sulle aule, sui tour dei laboratori, sui workshop o sul test d'ingresso!"
+
+  utter_ofa_info:
+  - text: |
+        Per immatricolarsi ai Corsi di Laurea triennale della Facoltà di Ingegneria, oltre al possesso di un diploma di scuola secondaria, è richiesto il possesso di un'adeguata preparazione iniziale. La verifica delle conoscenze in ingresso avviene mediante un test valutativo, non vincolante ai fini dell'immatricolazione, che costituisce per lo/a studente/essa un utile strumento di autovalutazione ed al tempo stesso consente alla Facoltà di organizzare adeguate attività di orientamento e formazione adatte a colmare eventuali lacune. Coloro che avranno ottenuto un punteggio pari o superiore a 15 sul totale di 30 punti potranno immatricolarsi senza Obbligo Formativo Aggiuntivo (OFA).
+
+  utter_ofa_date_info:
+  - text: |
+        Il test di verifica delle conoscenze verrà proposto nei mesi di febbraio e luglio 2024 in concomitanza delle attività di orientamento organizzate dall’Ateneo https://www.orienta.univpm.it/ e nel mese di settembre 2024.
+
+  utter_ofa_bad_info:
+  - text: |
+        Coloro che avranno ottenuto un punteggio pari o superiore a 15 sul totale di 30 punti, oppure che non avranno ancora sostenuto il test al momento della richiesta di immatricolazione, potranno comunque immatricolarsi, ma verrà loro assegnato un Obbligo Formativo Aggiuntivo (OFA) da assolvere entro il 09/08/2025 attraverso una delle seguenti modalità: superamento del test di recupero OFA-Ingegneria organizzato dalla Facoltà; superamento di un esame di contenuto matematico (SSD da MAT/01 a MAT/09). Il test di recupero degli OFA si svolgerà sulla piattaforma moodle di Ateneo (learn.univpm.it) in aule attrezzate nella sede della Facoltà di Ingegneria con cadenza bimestrale a partire dal mese di ottobre 2024. Le date verranno indicate nel sito web della Facoltà di Ingegneria e nel corso moodle dedicato, attivo a partire da settembre 2024, dove verranno inoltre fornite indicazioni dettagliate sul test. Lo/a studente/essa che non assolva al recupero dell’OFA entro il 09/08/2025 per l’a.a. 2024/25 non potrà iscriversi al secondo anno del Corso di Studi, ma nuovamente al primo.
+
+  utter_ask_study_course:
+  - text: "Per quale corso di studi sei interessato? Scegli uno dei seguenti:                                                                           "
+    buttons:
+      - title: "Ing.\nInformatica"
+        payload: '/select_course{{"study_course": "Ingegneria Informatica"}}'
+      - title: "Ing.\nElettronica"
+        payload: '/select_course{{"study_course": "Ingegneria Elettronica"}}'
+      - title: "Ing.\nMeccanica"
+        payload: '/select_course{{"study_course": "Ingegneria Meccanica"}}'
+      - title: "Ing.\nBiomedica"
+        payload: '/select_course{{"study_course": "Ingegneria Biomedica"}}'
+      - title: "Ing.\nAmbientale"
+        payload: '/select_course{{"study_course": "Ingegneria Ambientale"}}'
+      - title: "Ing.\nElettrica"
+        payload: '/select_course{{"study_course": "Ingegneria Elettrica"}}'
+
+  utter_ask_workshop_name_text:
+  - text: "Per quale workshop vorresti prenotarti?"
+
+  utter_ask_name:
+  - text: "Qual è il tuo nome?"
+
+  utter_ask_email:
+  - text: "Qual è il tuo indirizzo email?"
+
+  utter_booking_confirmed:
+  - text: "La tua prenotazione per il workshop {workshop_name_text} è stata confermata! Riceverai una email a breve."
+
+  utter_booking_failed:
+  - text: "Si è verificato un errore durante la prenotazione. Per favore riprova più tardi."
+
+forms:
+  workshop_booking_form:
+    required_slots:
+      - workshop_name_text
+      - name
+      - email
+
+config:
+    store_entities_as_slots: true
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+

@@ -2,6 +2,11 @@ version: "3.1"
 
 rules:
 
+- rule: Start the conversation
+  steps: 
+  - intent: start
+  - action: utter_start
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -11,3 +16,19 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Attiva il form per la prenotazione del workshop
+  steps:
+    - intent: book_workshop
+    - action: workshop_booking_form
+    - active_loop: workshop_booking_form
+
+- rule: Completa il form per la prenotazione del workshop
+  condition:
+    - active_loop: workshop_booking_form
+  steps:
+    - action: workshop_booking_form
+    - active_loop: null
+    - action: action_validate_form
+    - action: action_submit_workshop_booking
+    - action: action_reset_slots

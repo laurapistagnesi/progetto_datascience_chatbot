@@ -1,28 +1,28 @@
-﻿Aula;Quota;Edificio;Indicazioni
-140/1;Q140;Ingegneria;Di fronte alla mensa
-Sala Studio Q150;Q150;Ingegneria;Dalla fermata dell'autobus 46 sulla sinistra
-140/2;Q140;Ingegneria;Vicino all'entrata principale
-Salone Polifunzionale Q160;Q160;Ingegneria;Al piano terra, vicino alla biblioteca
-140/3;Q140;Ingegneria;Al primo piano, vicino all'ascensore
-Salone Polifunzionale Aule Sud PTTT;PTTT;Aule Sud;Al secondo piano, vicino alla scala principale
-140/D3;Q140;Ingegneria;Di fronte alla reception
-145/1 168 3A;Q145;Ingegneria;A destra dopo l'ingresso principale
-145/2 208 3B;Q145;Ingegneria;Al terzo piano, stanza 3B
-145/3;Q145;Ingegneria;Vicino alla sala professori
-155/8;Q155;Ingegneria;Al primo piano, a sinistra del corridoio principale
-155/10;Q155;Ingegneria;Al secondo piano, a destra
-155/D1;Q155;Ingegneria;Vicino all'aula magna
-155/D2;Q155;Ingegneria;Al piano terra, vicino all'uscita di emergenza
-155/D3;Q155;Ingegneria;Al primo piano, di fronte alla scala principale
-155/D4;Q155;Ingegneria;Al secondo piano, accanto alla sala riunioni
-160/1Q160;Q160;Ingegneria;Vicino alla caffetteria
-EN3;Q160;Ingegneria;Al terzo piano, a destra dell'ascensore
-EN4;Q160;Ingegneria;Al quarto piano, a sinistra dell'ascensore
-A7/8 Aule Sud PTTT;PTTT;Aule Sud;Di fronte all'ufficio del direttore
-A9/10 Aule Sud PTTT;PTTT;Aule Sud;Accanto alla sala conferenze
-A11 Aule Sud PTTT;PTTT;Aule Sud;Al terzo piano, vicino alla scala principale
-B1 Aule Sud PS01;PS01;Aule Sud;Di fronte alla mensa
-B2 Aule Sud PS01;PS01;Aule Sud;Al primo piano, accanto all'ascensore
-B3 Aule Sud PS01;PS01;Aule Sud;Al secondo piano, vicino all'uscita di emergenza
-B4/5 Aule Sud PS01;PS01;Aule Sud;Vicino alla biblioteca
-B7/8 Aule Sud PS01;PS01;Aule Sud;Accanto alla sala professori
+﻿Aula;Quota;Edificio;Indicazioni;Planimetria
+140/1;Q140;Ingegneria;Di fronte alla mensa;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2024/Q140.pdf
+Sala Studio Q150;Q150;Ingegneria;Dalla fermata dell'autobus 46 sulla sinistra;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2024/Q150.pdf
+140/2;Q140;Ingegneria;Vicino all'entrata principale;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2024/Q140.pdf
+Salone Polifunzionale Q160;Q160;Ingegneria;Al piano terra, vicino alla biblioteca;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/160.JPG
+140/3;Q140;Ingegneria;Al primo piano, vicino all'ascensore;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2024/Q140.pdf
+Salone Polifunzionale Aule Sud PTTT;PTTT;Aule Sud;Al secondo piano, vicino alla scala principale;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2016/Aule%20Sud%20PS01.pdf
+140/D3;Q140;Ingegneria;Di fronte alla reception;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2024/Q140.pdf
+145/1;Q145;Ingegneria;A destra dopo l'ingresso principale;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/145.JPG
+145/2;Q145;Ingegneria;Al terzo piano, stanza 3B;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/145.JPG
+145/3;Q145;Ingegneria;Vicino alla sala professori;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/145.JPG
+155/8;Q155;Ingegneria;Al primo piano, a sinistra del corridoio principale;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/155.JPG
+155/10;Q155;Ingegneria;Al secondo piano, a destra;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/155.JPG
+155/D1;Q155;Ingegneria;Vicino all'aula magna;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/155.JPG
+155/D2;Q155;Ingegneria;Al piano terra, vicino all'uscita di emergenza;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/155.JPG
+155/D3;Q155;Ingegneria;Al primo piano, di fronte alla scala principale;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/155.JPG
+155/D4;Q155;Ingegneria;Al secondo piano, accanto alla sala riunioni;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/155.JPG
+160/1;Q160;Ingegneria;Vicino alla caffetteria;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/160.JPG
+EN3;Q160;Ingegneria;Al terzo piano, a destra dell'ascensore;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/160.JPG
+EN4;Q160;Ingegneria;Al quarto piano, a sinistra dell'ascensore;https://diism.univpm.it/wp-content/uploads/sites/5/2016/05/160.JPG
+A7/8 Aule Sud PTTT;PTTT;Aule Sud;Di fronte all'ufficio del direttore;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2016/Aule%20Sud%20PTTT.pdf
+A9/10 Aule Sud PTTT;PTTT;Aule Sud;Accanto alla sala conferenze;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2016/Aule%20Sud%20PTTT.pdf
+A11 Aule Sud PTTT;PTTT;Aule Sud;Al terzo piano, vicino alla scala principale;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2016/Aule%20Sud%20PTTT.pdf
+B1 Aule Sud PS01;PS01;Aule Sud;Di fronte alla mensa;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2016/Aule%20Sud%20PS01.pdf
+B2 Aule Sud PS01;PS01;Aule Sud;Al primo piano, accanto all'ascensore;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2016/Aule%20Sud%20PS01.pdf
+B3 Aule Sud PS01;PS01;Aule Sud;Al secondo piano, vicino all'uscita di emergenza;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2016/Aule%20Sud%20PS01.pdf
+B4/5 Aule Sud PS01;PS01;Aule Sud;Vicino alla biblioteca;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2016/Aule%20Sud%20PS01.pdf
+B7/8 Aule Sud PS01;PS01;Aule Sud;Accanto alla sala professori;https://www.ingegneria.univpm.it/sites/www.ingegneria.univpm.it/files/ingegneria/planimetrie/2016/Aule%20Sud%20PS01.pdf

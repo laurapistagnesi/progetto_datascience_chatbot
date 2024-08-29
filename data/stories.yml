@@ -2,6 +2,16 @@ version: "3.1"
 
 stories:
 
+- story: start
+  steps: 
+  - intent: start
+  - action: utter_start
+
+- story: inform about bot
+  steps:
+  - intent: info_bot
+  - action: utter_start
+
 - story: happy path
   steps:
   - intent: greet
@@ -28,3 +38,67 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+  
+- story: inform about a workshop
+  steps:
+  - intent: inform_workshop
+  - action: action_workshop_info
+  - action: action_reset_slots
+
+- story: inform about a lab tour
+  steps:
+  - intent: inform_lab_tour
+  - action: action_lab_tour_info
+  - action: action_reset_slots
+
+- story: inform about a room
+  steps:
+  - intent: inform_room
+  - action: action_room_info
+  - action: action_reset_slots
+
+- story: inform about quota
+  steps:
+  - intent: inform_planimetria
+  - action: action_planimetria_info
+  - action: action_reset_slots
+
+- story: inform about OFA
+  steps:
+  - intent: ask_ofa_info
+  - action: utter_ofa_info
+
+- story: inform about date OFA
+  steps:
+  - intent: ask_ofa_date_info
+  - action: utter_ofa_date_info
+
+- story: inform about bad OFA
+  steps:
+  - intent: ask_ofa_bad_info
+  - action: utter_ofa_bad_info
+
+- story: inform about workshops by study course
+  steps:
+  - intent: ask_workshops
+  - action: utter_ask_study_course    
+  - intent: select_course
+  - slot_was_set:
+      - study_course
+  - action: action_show_workshops
+
+- story: book a workshop
+  steps:
+  - intent: book_workshop
+  - action: workshop_booking_form
+  - active_loop: workshop_booking_form
+  - slot_was_set:
+      - requested_slot: workshop_name_text
+  - slot_was_set:
+      - requested_slot: name
+  - slot_was_set:
+      - requested_slot: email
+  - active_loop: null
+  - action: action_validate_form
+  - action: action_submit_workshop_booking
+  - action: action_reset_slots
