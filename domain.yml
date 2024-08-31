@@ -161,6 +161,7 @@ responses:
         payload: '/select_course{{"study_course": "Ingegneria Ambientale"}}'
       - title: "Ing.\nElettrica"
         payload: '/select_course{{"study_course": "Ingegneria Elettrica"}}'
+    button_type: "vertical"
 
   utter_ask_workshop_name_text:
   - text: "Per quale workshop vorresti prenotarti?"
