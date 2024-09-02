@@ -177,12 +177,57 @@ nlu:
     - /start
     - start
 
+- intent: stop
+  examples: |
+    - /stop
+    - stop
+
 - intent: ask_workshops
   examples: |
     - Mi dici quali workshop sono disponibili?
     - Mostrami i workshop
     - Quali sono i workshop disponibili?
     - Posso sapere i workshop?
+
+- intent: ask_lab_tour
+  examples: |
+    - Mostrami i tour
+    - Mi fai vedere i tour nei laboratori?
+    - Vorrei vedere i tour nei laboratori
+    - Quali sono i prossimi tour nei laboratori?
+    - Mostrami i tour dei laboratori
+    - Elencami i tour disponibili nei laboratori
+    - Ci sono tour nei laboratori?
+    - Voglio vedere i tour nei laboratori
+    - Fammi vedere i tour dei laboratori
+    - I tour disponibili?
+    - Posso avere informazioni sui tour nei laboratori?
+
+- intent: view_more_tours
+  examples: |
+    - si, grazie
+    - Ok
+    - Sì, mostrami altri tour
+    - Voglio vedere altri tour
+    - Mostrami altri
+    - Sì, fammi vedere più tour
+    - Altri tour, per favore
+    - Posso vedere altri tour?
+    - Ancora tour, per favore
+    - Sì, continua con i tour
+
+- intent: deny_more_tours
+  examples: |
+    - no, non voglio
+    - non voglio
+    - No, grazie
+    - Basta così, grazie
+    - Non voglio vedere altri tour
+    - No, ho visto abbastanza
+    - No, non mostrarmi altri tour
+    - No, sono a posto così
+    - Va bene così, grazie
+    - No, per adesso basta
 
 - intent: select_course
   examples: |

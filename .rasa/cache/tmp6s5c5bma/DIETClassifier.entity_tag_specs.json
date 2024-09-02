@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-aula",
+      "2": "I-aula",
+      "3": "L-aula",
+      "4": "U-aula",
+      "5": "B-lab_tour_name",
+      "6": "I-lab_tour_name",
+      "7": "L-lab_tour_name",
+      "8": "U-lab_tour_name",
+      "9": "B-quota",
+      "10": "I-quota",
+      "11": "L-quota",
+      "12": "U-quota",
+      "13": "B-study_course",
+      "14": "I-study_course",
+      "15": "L-study_course",
+      "16": "U-study_course",
+      "17": "B-workshop_name",
+      "18": "I-workshop_name",
+      "19": "L-workshop_name",
+      "20": "U-workshop_name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-aula": 1,
+      "I-aula": 2,
+      "L-aula": 3,
+      "U-aula": 4,
+      "B-lab_tour_name": 5,
+      "I-lab_tour_name": 6,
+      "L-lab_tour_name": 7,
+      "U-lab_tour_name": 8,
+      "B-quota": 9,
+      "I-quota": 10,
+      "L-quota": 11,
+      "U-quota": 12,
+      "B-study_course": 13,
+      "I-study_course": 14,
+      "L-study_course": 15,
+      "U-study_course": 16,
+      "B-workshop_name": 17,
+      "I-workshop_name": 18,
+      "L-workshop_name": 19,
+      "U-workshop_name": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

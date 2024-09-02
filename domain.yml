@@ -2,6 +2,7 @@ version: "3.1"
 
 intents:
   - start
+  - stop
   - info_bot
   - greet
   - goodbye
@@ -24,6 +25,9 @@ intents:
   - select_course
   - inform_planimetria
   - book_workshop
+  - view_more_tours
+  - deny_more_tours
+  - ask_lab_tour
 
 entities:
   - workshop_name
@@ -49,6 +53,7 @@ actions:
   - action_planimetria_info
   - action_submit_workshop_booking
   - action_validate_form
+  - action_show_lab_tours
 
 slots:
   aula:
@@ -81,6 +86,15 @@ slots:
     mappings:
       - type: from_entity
         entity: quota
+  tour_index:
+    type: float
+    min_value: -100.0
+    max_value:  500.0
+    initial_value: 0
+    mappings:
+      - type: from_intent
+        value: 0
+        intent: ask_lab_tour
   workshop_name_text:
     type: text
     influence_conversation: true
@@ -177,6 +191,12 @@ responses:
 
   utter_booking_failed:
   - text: "Si è verificato un errore durante la prenotazione. Per favore riprova più tardi."
+
+  utter_ask_view_more_tours:
+  - text: "Vuoi vedere altri tour?"
+
+  utter_no_more_tours:
+  - text: "Bene, spero di esserti stato utile!"
 
 forms:
   workshop_booking_form:

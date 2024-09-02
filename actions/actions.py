@@ -179,7 +179,7 @@ class ActionResetSlots(Action):
 
     async def run(self, dispatcher, tracker, domain):
         # Resetta gli slot specificati
-        return [SlotSet("workshop_name", None), SlotSet("lab_tour_name", None), SlotSet("aula", None), SlotSet("quota", None), SlotSet("study_course", None), SlotSet("name", None), SlotSet("email", None), SlotSet("workshop_name_text", None)]
+        return [SlotSet("workshop_name", None), SlotSet("lab_tour_name", None), SlotSet("aula", None), SlotSet("quota", None), SlotSet("study_course", None), SlotSet("name", None), SlotSet("email", None), SlotSet("workshop_name_text", None), SlotSet("tour_index", 0)]
     
 
 class ActionShowWorkshops(Action):
@@ -304,3 +304,38 @@ class ActionValidateForm(Action):
                 dispatcher.utter_message(text=error)
             return [SlotSet("name", None), SlotSet("email", None), SlotSet("workshop_name_text", None)]
         return []
+
+class ActionShowLabTours(Action):
+
+    def name(self) -> Text:
+        return "action_show_lab_tours"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        tours_df = pd.read_csv('./dataset/lab_tours.csv', sep=';')
+        
+        # Ottengo l'indice corrente dallo slot
+        tour_index = tracker.get_slot('tour_index')
+
+        # Mostro i prossimi 5 tour
+        start_index = tour_index
+        end_index = tour_index + 5
+        tours_to_show = tours_df[start_index:end_index]
+
+        if tours_to_show.empty:
+            dispatcher.utter_message(text="Non ci sono più tour disponibili.")
+            return [SlotSet("tour_index", 0)]  #Reimposto lo slot a 0
+
+        tours_message = "Ecco i prossimi tour nei laboratori:\n\n"
+        for _, row in tours_to_show.iterrows():
+            tours_message += f"{row['Lab Tour Name']}\n"
+
+        dispatcher.utter_message(text=tours_message)
+
+        # Aggiorno l'indice dello slot
+        tour_index += len(tours_to_show)
+        dispatcher.utter_message(response="utter_ask_view_more_tours")
+
+        return [SlotSet("tour_index", tour_index)]

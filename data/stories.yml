@@ -7,6 +7,12 @@ stories:
   - intent: start
   - action: utter_start
 
+- story: stop
+  steps: 
+  - intent: stop
+  - action: action_reset_slots
+  - action: utter_no_more_tours
+
 - story: inform about bot
   steps:
   - intent: info_bot
@@ -25,9 +31,6 @@ stories:
   - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
 
 - story: sad path 2
   steps:
@@ -35,9 +38,6 @@ stories:
   - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
   
 - story: inform about a workshop
   steps:
@@ -102,3 +102,8 @@ stories:
   - action: action_validate_form
   - action: action_submit_workshop_booking
   - action: action_reset_slots
+
+- story: show lab tours
+  steps:
+  - intent: ask_lab_tour
+  - action: action_show_lab_tours
