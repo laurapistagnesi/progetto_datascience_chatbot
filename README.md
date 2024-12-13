@@ -24,13 +24,29 @@ Un dataset fittizio è stato creato per simulare le interazioni reali degli stud
 
 OrientaStudentBot offre diverse funzionalità:
 - **Visualizzare informazioni su un workshop**: Questa funzionalità consente agli utenti di ottenere informazioni dettagliate su un workshop specifico. Il chatbot risponde alle richieste degli utenti fornendo dati come la data, l'orario, la location e il corso di studi associato.
+<img src="https://github.com/user-attachments/assets/2f907ebb-eaaa-45b7-9b65-3ddb0d8a708e" alt="workshop" width="300">
+
 - **Visualizzare i workshop per corso di studio**: In questa funzionalità, il chatbot permette agli utenti di filtrare i workshop disponibili in base al loro corso di studi. Il chatbot chiede all'utente di selezionare il corso di studi di interesse tramite un elenco di opzioni interattive (bottoni). Una volta selezionato il corso di studi, l'utente riceve una lista dei workshop disponibili per il corso di studi scelto, permettendo una ricerca mirata e personalizzata.
+<img src="https://github.com/user-attachments/assets/b262bf77-87a7-4827-9cb1-d9712d49f582" alt="workshop-per-corso" width="300">
+
 - **Visualizzare i tour dei laboratori**: Questa funzionalità consente agli utenti di esplorare i tour dei laboratori offerti dall'università.
+<img src="https://github.com/user-attachments/assets/6339e413-98e3-45fe-9379-23e83d3f30f4" alt="tour" width="300">
+
 - **Visualizzare informazioni sui tour dei laboratori**: Questa opzione consente agli utenti di ottenere informazioni dettagliate su un singolo tour dei laboratori. L'utente può specificare il nome del tour desiderato, e il chatbot risponderà con tutti i dettagli pertinenti.
+<img src="https://github.com/user-attachments/assets/bc381a99-9d84-424b-b413-15ec3cfa9032" alt="tour_info" width="300">
+
 - **Visualizzare informazioni sulle aule**: Il chatbot offre la possibilità di ottenere informazioni dettagliate sulle aule dell'università, inclusi il nome dell'aula, l'edificio in cui si trova, la quota, le indicazioni specifiche e un link alla planimetria.
+<img src="https://github.com/user-attachments/assets/eedc0d95-e2ec-419a-b578-9a15dd3b98ff" alt="aula" width="300">
+
 - **Visualizzare informazioni sulle quote**: Questa funzionalità permette agli utenti di ottenere un link alla planimetria di una specifica quota (livello) all'interno di un edificio.
+<img src="https://github.com/user-attachments/assets/5a078fa6-1186-4061-88e8-597f74bd8856" alt="quota" width="300">
+
 - **Visualizzare informazioni sugli OFA**: OrientaStudentBot è in grado di fornire informazioni sugli Obblighi Formativi Aggiuntivi (OFA), che sono spesso fonte di dubbi tra gli studenti. Il chatbot risponde alle domande degli utenti riguardanti cosa sono gli OFA, le date dei test di ingresso e le conseguenze di non superare questi test.
+<img src="https://github.com/user-attachments/assets/74b9512b-a388-4c3c-8792-3b2325bfca1f" alt="ofa1" width="300">
+
 - **Prenotare un workshop**: OrientaStudentBot offre una funzionalità di prenotazione per i workshop. L'utente dovrà compilare un form con le diverse informazioni necessarie al bot e, se i dati inseriti sono corretti, verrà inviata un'email di conferma prenotazione.
+<img src="https://github.com/user-attachments/assets/62d16a36-5dcf-499e-9dc0-3fea11e16fc0" alt="book_workshop" width="300">
+
 
 ### Integrazione con Telegram
 
